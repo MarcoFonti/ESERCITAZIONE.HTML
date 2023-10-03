@@ -6,31 +6,52 @@
     <title>Document</title>
 </head>
 <body>
+
+    <form>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="marcofonti@libero.it" required>
     
-    <label for="disabled"></label>
-    <input type="button" value="disabled" name="disabled"disabled>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="confirm_password">Conferma Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+    
+        <label for="firstandlast_name">Nome e Cognome</label>
+        <input type="text" id="firstandlast_name" name="firstandlast_name" placeholder="Marco Fonti" required>
+    
+        <label for="date">Anno di nascita</label>
+        <input type="date" id="date" name="date" required>
+    
+        <label for="phonenumber">Numero di telefono</label>
+        <input type="tel" id="phonenumber" name="phonenumber" required>
+    
+        <select name="subscription" id="subscription" required>
+            <option value="free">Free</option>
+            <option value="2euro">2€</option>
+            <option value="6euro">6€</option>
+            <option value="12euro">12€</option>
+        </select>
+    
+        <input type="checkbox" id="confirm" name="confirm" value="confirm" required>
+        <label for="confirm">PRO plan</label>
+    
+        <label for="creditcard_number">Credit card number</label>
+        <input type="text" id="creditcard_number" name="creditcard_number" required>
+    
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" name="cvc" maxlength="3" required>
+    
+        <label for="expiration_date">Expiration date</label>
+        <input type="date" id="expiration_date" name="expiration_date" required>
+    
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+    
+        <button type="submit">Invia</button>
 
-    <label for="range">Range</label>
-    <input type="number" name="range" min="0" max="100" list="tickmarks" autofocus>
-    <datalist id="tickmarks">
-
-        <option value="0"></option>
-        <option value="10"></option>
-        <option value="20"></option>
-        <option value="30"></option>
-        <option value="40"></option>
-        <option value="50"></option>
-        <option value="60"></option>
-        <option value="70"></option>
-        <option value="80"></option>
-        <option value="90"></option>
-        <option value="100"></option> 
-
-    </datalist>
-    <input type="checkbox" name="enable" value="enable" checked>
-    <label for="enable">Checkbox</label>
-    <label for="date">Current date</label>
-    <input type="date" name="date" value="date">
-
+    </form>
+    
 </body>
 </html>
